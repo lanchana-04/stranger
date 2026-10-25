@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviePlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.navbar {
+    height: 75px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 35px;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+.signin {
+    margin-left: auto;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.hero {
+    height: 85vh;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(0, 0, 0, 0.55) 45%,
+            rgba(0, 0, 0, 0.05) 100%
+        ),
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.7),
+            transparent 50%
+        ),
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.content {
+    max-width: 550px;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play {
+    background-color: white;
+    color: #222;
+}
+
+.info {
+    background-color: #536b8b;
+    color: white;
+}
+
+.play:hover {
+    background-color: #ddd;
+}
+
+.info:hover {
+    background-color: #40536d;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 10px;
+        overflow-x: auto;
+    }
+
+    nav a {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .signin {
+        padding: 8px;
+    }
+
+    .hero {
+        padding: 25px;
+        background-position: center;
+    }
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <h2 class="logo">MoviePlay</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">New & Popular</a>
+            <a href="#">My List</a>
+        </nav>
+
+        <button class="signin">Sign In</button>
+    </header>
+
+   
+    <section class="hero">
+
+        <div class="content">
+            <h1>Stranger<br>Things</h1>
+
+            <p>
+                A young boy disappears and a small town discovers mysterious
+                supernatural forces.
+            </p>
+
+            <div class="buttons">
+                <button class="play">▶ Play</button>
+                <button class="info">ⓘ More Info</button>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
